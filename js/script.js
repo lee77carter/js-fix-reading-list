@@ -30,7 +30,7 @@ button.addEventListener("click", function (e) {
   }
 
   // Create new book object
-  const book = addBook(titleValue, authorvalue, pagesValue);
+  const book = addBook(titleValue, authorValue, pagesValue);
 
   // Render to DOM
   addToTable();
