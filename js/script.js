@@ -10,6 +10,7 @@ const addBook = function (title, author, pages) {
     author: author,
     pages: pages
   };
+  return book;
 };
 
 button.addEventListener("click", function (e) {
@@ -30,17 +31,18 @@ button.addEventListener("click", function (e) {
   }
 
   // Create new book object
-  const book = addBook(titleValue, authorvalue, pagesValue);
+  const book = addBook(titleValue, authorValue, pagesValue);
 
   // Render to DOM
-  addToTable();
+  addToTable(book);
 
   // Clear form
   clearForm();
 });
 
-const addToTable = function () {
+const addToTable = function (book) {
   const tr = document.createElement("tr");
+  console.log(book.title);
   const rowContents = `<td>${book.title}</td><td>${book.author}</td><td>${book.pages}</td>`;
   tr.innerHTML = rowContents;
   tableBody.append(tr);
