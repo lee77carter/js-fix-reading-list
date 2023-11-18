@@ -39,7 +39,7 @@ button.addEventListener("click", function (e) {
   clearForm();
 });
 
-const addToTable = function () {
+const addToTable = function (book) {
   const tr = document.createElement("tr");
   const rowContents = `<td>${book.title}</td><td>${book.author}</td><td>${book.pages}</td>`;
   tr.innerHTML = rowContents;
