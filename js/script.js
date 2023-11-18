@@ -10,6 +10,7 @@ const addBook = function (title, author, pages) {
     author: author,
     pages: pages
   };
+  return book;
 };
 
 button.addEventListener("click", function (e) {
