@@ -3,6 +3,6 @@
  ![book list](img/book-list.png)
 
 
-Description-here: A mobile-friendly website template crafted for Rogue Pickings Company.
+A reading book list.
 
-<a href="url-here/">Create a Book List</a>
+<a href="https://lee77carter.github.io/js-fix-reading-list/">Create a Book List</a>
